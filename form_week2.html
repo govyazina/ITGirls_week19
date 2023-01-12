@@ -5,16 +5,16 @@
     <title>Кошачий опрос</title>
 </head>
 <body>
-<form onsubmit="save(event)">
+<form id="formCat" onsubmit="save(event)">
 
     <fieldset>
         <legend>Данные владельца</legend>
         <label for="human-name"></label>
-        <input type="text" id="human-name" placeholder="имя владельца" tabindex="1"/><br>
+        <input type="text" id="human-name" name="human-name" placeholder="имя владельца" tabindex="1"/><br>
         <label for="human-last-name"></label>
-        <input type="text" id="human-last-name" placeholder="фамилия владельца" tabindex="1"/><br>
+        <input type="text" id="human-last-name" name="human-last-name" placeholder="фамилия владельца" tabindex="1"/><br>
         <label for="phone"></label>
-        <input type="tel" id="phone" placeholder="номер телефона" tabindex="1"/>
+        <input type="tel" id="phone" name="phone" placeholder="номер телефона" tabindex="1"/>
 
     </fieldset>
     <fieldset>
@@ -30,7 +30,7 @@
         <div>
             <h3>Порода</h3>
             <label for="breed"></label>
-            <select id="breed">
+            <select id="breed" name="breed">
                 <option disabled selected>выберите породу из списка</option>
                 <option>метис</option>
                 <option>сфинкс</option>
